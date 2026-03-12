@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(curl -s http://localhost:5173/myrtle-golf-2026-website/ 2>/dev/null | head -15; kill %1 2>/dev/null; true)",
+      "mcp__google-sheets__rename_sheet",
+      "mcp__google-sheets__create_sheet",
+      "mcp__google-sheets__batch_update_cells",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" \"https://docs.google.com/spreadsheets/d/1prmP5W0NhPVquKSvrCtY-W7wEQOEBkYFcCFAOFAeiAI/gviz/tq?tqx=out:csv&sheet=Players\")",
+      "Bash(npx vite:*)",
+      "WebSearch",
+      "WebFetch(domain:course.bluegolf.com)",
+      "WebFetch(domain:www.golflink.com)",
+      "WebFetch(domain:www.mscorecard.com)",
+      "WebFetch(domain:www.fairwaysandroughs.com)",
+      "WebFetch(domain:www.golfify.io)",
+      "WebFetch(domain:www.provisualizer.com)",
+      "WebFetch(domain:barefootlovemyrtlebeach.com)",
+      "WebFetch(domain:www.golfsmash.com)",
+      "WebFetch(domain:www.golfpass.com)",
+      "Bash(cat << 'EOF'\nCourses with their par-3 holes:\n1. TPC Myrtle Beach: 4,5,4,4,3,5,3,4,4,4,4,4,3,5,4,4,3,5 → par3s at holes 5,7,13,17\n2. Caledonia: 4,5,3,4,4,3,4,5,3,5,3,4,4,4,4,4,3,4 → par3s at 3,6,9,11,17\n3. True Blue: 5,4,3,5,4,4,3,4,5,5,3,4,4,3,5,3,4,4 → par3s at 3,7,11,14,16\n4. Barefoot Dye: 4,4,3,4,5,3,4,5,4,4,4,5,4,4,3,5,3,4 → par3s at 3,6,15,17\n5. Barefoot Love: 4,5,3,4,4,4,4,5,3,4,3,4,5,4,3,4,4,5 → par3s at 3,9,11,15\n6. Grande Dunes: 4,3,4,5,4,4,5,3,4,4,3,4,5,3,4,4,5,4 → par3s at 2,8,11,14\n7. Tidewater: 5,4,3,4,4,4,4,5,3,4,4,3,5,4,4,5,3,4 → par3s at 3,9,12,17\n8. Pawleys: 5,4,3,5,4,4,3,4,4,4,5,4,3,5,4,4,3,4 → par3s at 3,7,13,17\n9. Litchfield: 4,3,5,4,4,5,4,3,4,4,5,4,4,3,4,4,3,5 → par3s at 2,8,14,17\nEOF)"
+    ]
+  }
+}
