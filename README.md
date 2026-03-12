@@ -1,16 +1,37 @@
-# React + Vite
+# Myrtle Beach 2026 Golf Trip
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Scoring website for the Myrtle Beach 2026 golf trip (Mar 20–24). Tracks individual Stableford and team scramble scores across 9 rounds with live leaderboard standings.
 
-Currently, two official plugins are available:
+**Live site:** https://rkumsher.github.io/myrtle-golf-2026-website/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Overall leaderboard with individual, scramble, and bonus point breakdowns
+- Round detail pages with full 18-hole scorecards and color-coded Stableford indicators
+- Player stats: scoring distribution, par-3/4/5 averages, best/worst rounds
+- Supports both scramble formats (2v2v2v2 and 4v4)
+- Bonus point tracking (CTP on par 3s, longest drive)
+- Masters Golf aesthetic with responsive design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React + Vite + Tailwind CSS
+- Google Sheets as data store (fetched as CSV via PapaParse)
+- GitHub Pages for hosting
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Scoring
+
+Enter scores in the [Google Sheet](https://docs.google.com/spreadsheets/d/1prmP5W0NhPVquKSvrCtY-W7wEQOEBkYFcCFAOFAeiAI/edit). The website computes all Stableford points, rankings, and trip point allocations automatically.
+
+## Deploy
+
+```bash
+npm run deploy
+```
