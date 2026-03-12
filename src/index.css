@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-masters-green: #006747;
+  --color-masters-green-dark: #004d35;
+  --color-masters-gold: #f2b800;
+  --color-masters-cream: #f5f1e8;
+  --color-masters-red: #c41e3a;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-masters-cream);
+  color: #1a1a1a;
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+}
+
+.scorecard-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.stableford-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.stableford-eagle {
+  border: 2px solid var(--color-masters-red);
+  box-shadow: 0 0 0 2px var(--color-masters-red);
+  border-radius: 9999px;
+  color: var(--color-masters-red);
+}
+
+.stableford-birdie {
+  border: 2px solid var(--color-masters-red);
+  border-radius: 9999px;
+  color: var(--color-masters-red);
+}
+
+.stableford-par {
+  color: #1a1a1a;
+}
+
+.stableford-bogey {
+  border: 2px solid #888;
+  color: #555;
+}
+
+.stableford-double {
+  border: 2px solid #888;
+  box-shadow: 0 0 0 2px #888;
+  color: #555;
+}
+
+.stat-bar {
+  height: 1.25rem;
+  border-radius: 0.25rem;
+  transition: width 0.3s ease;
+}
