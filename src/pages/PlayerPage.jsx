@@ -85,14 +85,15 @@ export default function PlayerPage({ data }) {
           <div className="bg-masters-green px-4 py-2">
             <h3 className="text-white text-lg font-heading m-0">Round by Round</h3>
           </div>
-          <table className="w-full text-sm">
+          <div className="scorecard-scroll">
+          <table className="w-full text-sm min-w-[500px]">
             <thead>
               <tr className="bg-masters-green-dark text-white text-xs uppercase">
                 <th className="py-2 px-3 text-left">Round</th>
                 <th className="py-2 px-3 text-center">Type</th>
-                <th className="py-2 px-3 text-center">Position</th>
+                <th className="py-2 px-3 text-center">Pos</th>
                 <th className="py-2 px-3 text-center">Score</th>
-                <th className="py-2 px-3 text-center">Points</th>
+                <th className="py-2 px-3 text-center">Pts</th>
               </tr>
             </thead>
             <tbody>
@@ -127,6 +128,7 @@ export default function PlayerPage({ data }) {
               })}
             </tbody>
           </table>
+          </div>
         </div>
       )}
 
